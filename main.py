@@ -1,4 +1,5 @@
 import time_calculator
+from unittest import main
 
 print(time_calculator.add_time("3:00 PM", "3:10"))
 # Returns: 6:10 PM
@@ -17,3 +18,6 @@ print(time_calculator.add_time("11:43 PM", "24:20", "tueSday"))
 
 print(time_calculator.add_time("6:30 PM", "205:12"))
 # Returns: 7:42 AM (9 days later)
+
+# Run unit tests automatically
+main(module='test_module', exit=False)
